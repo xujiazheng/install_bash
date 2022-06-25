@@ -7,7 +7,7 @@ fi
 
 cd ~/service
 
-git clone git clone https://github.com/xujiazheng/qiniu-upload.git
+git clone https://github.com/xujiazheng/qiniu-upload.git
 
 cd qiniu-upload
 
