@@ -1,19 +1,26 @@
 ## CentOS服务器一键部署
 
-### 服务器环境搭建
+适用于CentOS系统的云服务器
 
-1. 运行yum.sh设置yum状态，并安装node、mongodb、nginx、git
-2. 运行nginx.sh拷贝nginx的配置文件到对应目录
-3. 运行npm.sh安装npm全局包
+## 上传到服务器
+
+```
+scp -r ./install-task  root@114.116.99.248:~
+```
+
+## 运行脚本
+
+
+### 环境搭建
+运行env.sh设置yum状态,并安装node、mongodb、nginx、git等环境
 
 ### 前端应用部署
 
-1. app.sh执行对应的工程脚本，进行clone、run等操作
+1. 运行app.sh，会执行对应的工程脚本，进行clone、run等操作
 2. 每增加一个工程，增加到一个脚本到app.sh运行即可
 
-#### 前提条件
+### 问题
 
-1. 依赖mongodb，mongodb保证是启动状态
-2. 可修改mongodb的配置，bindIp为0.0.0.0，外网可访问
-3. 可设置mongodb为开机自启：https://www.lxlinux.net/2354.html
+### env运行安装应用失败
 
+运行env存在yum安装应用失败问题，出现问题则需要重新运行env.sh

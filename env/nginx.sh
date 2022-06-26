@@ -13,10 +13,18 @@ echo "copy conf to nginx"
 cp ${DIR}/source/node.conf /etc/nginx/conf.d/
 cp ${DIR}/source/gzip.conf /etc/nginx/conf.d/
 
+# nginx启动
+systemctl start nginx
+systemctl enable nginx
+
 # 定义一些nginx映射的目录
 cd /
+if [ ! -d srv ]
+then 
 mkdir srv
 cd srv
 mkdir static
 mkdir cwstage
 echo "srv dir created"
+if
+

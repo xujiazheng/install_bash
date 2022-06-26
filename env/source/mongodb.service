@@ -1,0 +1,15 @@
+[Unit]  
+Description=mongodb  
+After=network.target remote-fs.target nss-lookup.target  
+
+[Service]  
+Type=forking  
+RuntimeDirectory=mongodb
+RuntimeDirectoryMode=0751
+PIDFile=/var/run/mongodb/mongod.pid
+ExecStart=/usr/bin/mongod --config /etc/mongod.conf  
+ExecStop=/usr/bin/mongod --shutdown --config /etc/mongod.conf  
+PrivateTmp=false  
+
+[Install]  
+WantedBy=multi-user.target
