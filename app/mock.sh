@@ -7,7 +7,7 @@ fi
 
 cd ~/service
 
-git clone https://github.com/xujiazheng/mock-service.git
+git clone https://gitee.com/xuazheng/mock-service.git
 
 cd mock-service
 

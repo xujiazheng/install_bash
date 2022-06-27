@@ -2,9 +2,7 @@
 
 # 安装nginx
 
-yum -y install nginx
-
-echo "nginx install ok"
+yum -y install nginx && echo "nginx install ok"
 
 # 配置拷贝到服务器中
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
@@ -22,9 +20,9 @@ cd /
 if [ ! -d srv ]
 then 
 mkdir srv
-cd srv
+fi
+
+cd /srv
 mkdir static
 mkdir cwstage
 echo "srv dir created"
-if
-

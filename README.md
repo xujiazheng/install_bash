@@ -2,6 +2,10 @@
 
 适用于CentOS系统的云服务器
 
+## git
+
+https://github.com/xujiazheng/install_bash
+
 ## 上传到服务器
 
 ```
@@ -13,6 +17,10 @@ scp -r ./install-task  root@114.116.99.248:~
 
 ### 环境搭建
 运行env.sh设置yum状态,并安装node、mongodb、nginx、git等环境
+
+#### 环境检查
+
+运行env_check.sh检查应用是否安装成功
 
 ### 前端应用部署
 
