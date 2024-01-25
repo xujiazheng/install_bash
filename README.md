@@ -1,6 +1,6 @@
 ## CentOS服务器一键部署
 
-适用于CentOS系统的云服务器
+适用于CentOS8系统的云服务器
 
 ## git
 
